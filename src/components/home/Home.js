@@ -8,7 +8,7 @@ import "../../stylesheets/css/Home.css";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Category />
     </div>
   );
