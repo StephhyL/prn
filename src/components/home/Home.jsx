@@ -18,6 +18,7 @@ const Home = () => {
         <Category />
         <Category />
         <Category />
+        <Category />
       </div>
     </div>
   );

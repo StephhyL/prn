@@ -1,10 +1,16 @@
-import Logo from "./logo.png";
+import Logo from "./images/logo.png";
 
 // import styling
 import "../../stylesheets/css/Header.css";
 
 const Header = () => {
-  return <div>Hello from Header</div>;
+  return (
+    <div>
+      <div className="top">
+        <img src={Logo} className="logo" alt="prn-logo" width="100" />
+      </div>
+    </div>
+  );
 };
 
 export default Header;
