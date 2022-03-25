@@ -4,7 +4,11 @@ import React from "react";
 import "../../stylesheets/css/Timer.css";
 
 const Timer = () => {
-  return <div>Hello from Timer</div>;
+  return (
+    <div className="timer">
+      <div className="time">05:00</div>
+    </div>
+  );
 };
 
 export default Timer;

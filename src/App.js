@@ -11,7 +11,6 @@ import "./stylesheets/css/App.css";
 const App = () => {
   return (
     <div className="App">
-      Hello from App
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />

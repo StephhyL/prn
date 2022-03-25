@@ -1,0 +1,18 @@
+.timer {
+  width: 100vw;
+  height: 20vh;
+  border: 3px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  width: 80vw;
+  height: 10vh;
+  border: 3px black solid;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

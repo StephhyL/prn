@@ -1,0 +1,23 @@
+.home {
+  width: 100%;
+  height: 80vh;
+  border: 3px red solid;
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    border: 3px solid green;
+    color: white;
+  }
+
+  .catLayout {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px blue solid;
+  }
+}
