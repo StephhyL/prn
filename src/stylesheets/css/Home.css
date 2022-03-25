@@ -1,1 +1,1 @@
-.home{width:100vw;height:100vh;margin:auto;border:3px red solid}
+.home{width:100%;height:80vh;border:3px red solid;display:flex;flex-direction:column}.catLayout{width:100%;height:100%;display:flex;flex-wrap:wrap;border:3px blue solid}
