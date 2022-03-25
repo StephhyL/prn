@@ -1,7 +1,8 @@
 // import from other libraries
-import { BroswerRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import other Components
+import Home from "./components/home/Home";
 
 // import styling
 import "./App.css";
