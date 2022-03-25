@@ -1,3 +1,5 @@
+import Logo from "./logo.png";
+
 // import styling
 import "../../stylesheets/css/Header.css";
 
