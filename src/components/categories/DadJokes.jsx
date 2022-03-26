@@ -1,6 +1,6 @@
 import "../../stylesheets/css/DadJokes.css";
 import { useState } from "react";
-import { dadJokesData } from "../home/Data/DadJokesData";
+import { dadJokesData } from "../home/Data/DadJokesData.js";
 
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
