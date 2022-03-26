@@ -3,7 +3,7 @@
 .timer {
   width: 100vw;
   height: 20vh;
-  border: 3px black solid;
+  // border: 3px black solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,7 +12,11 @@
 .time {
   width: 80vw;
   height: 10vh;
-  border: 3px black solid;
+  // border: 3px black solid;
+  font-size: 5em;
+  color: #f4b43e;
+  background-color: #64748b;
+  box-shadow: 10px 10px #b3e0af;
   border-radius: 100px;
   display: flex;
   justify-content: center;

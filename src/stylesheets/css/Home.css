@@ -1,1 +1,1 @@
-.home{width:100%;height:80vh;border:3px red solid;display:flex;flex-direction:column}.home .header{background-color:#000;width:100%;height:10%;border:3px solid green;color:#fff}.home .catLayout{width:100%;height:100%;display:flex;flex-wrap:wrap;border:3px blue solid}
+.home{width:100%;height:80vh;display:flex;flex-direction:column}.home .header{width:100%;height:10vh;color:#fff}.home .catLayout{width:100%;height:100%;display:flex;flex-wrap:wrap}

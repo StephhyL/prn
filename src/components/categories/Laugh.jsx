@@ -6,7 +6,8 @@ import Back from "./Back";
 // import local media
 import laughSound from "../docs/Laugh_Track.mp3";
 import haha from "./cateImages/haha.png";
-import haha2 from "./cateImages/haha2.jpeg";
+// import haha from "./cateImages/haha.jpeg";
+import haha2 from "./cateImages/haha.png";
 
 // import styling
 import "../../stylesheets/css/Laugh.css";
@@ -39,7 +40,7 @@ const Laugh = () => {
         <Back />
       </div>
       <div className="hahaImgBtn">
-        <span>Hello From Laugh</span>
+        {/* <span>Hello From Laugh</span> */}
         <div onClick={handleClick}>
           {isHaha && (
             <img src={haha} className="haha" width="800" height="800" />
