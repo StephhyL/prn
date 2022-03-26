@@ -1,6 +1,6 @@
 // all the imports
 import dad from "./images/dad.png";
-import roast from "./images/dark.png";
+import roast from "./images/roast.png";
 import memes from "./images/memes.png";
 import guess from "./images/guess.png";
 import laugh from "./images/laugh.png";
