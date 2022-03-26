@@ -36,7 +36,7 @@ const App = () => {
           <input
             className="timer-input"
             type="text"
-            placeholder="App usage time"
+            placeholder="Set Usage Time"
             name="timer"
             value={input}
             onChange={(event) => handleChange(event, setInput)}
