@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router-dom";
-
 // import styling
 import "../../stylesheets/css/Category.css";
 
 const Category = (props) => {
-  const { catImg, name } = props;
+  const { catImg, name} = props;
   const navigate = useNavigate();
 
   // console.log("catImg --> ", catImg);
+
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -23,6 +23,7 @@ const Category = (props) => {
         width="125"
         // height="200"
       />
+      
     </div>
   );
 };
