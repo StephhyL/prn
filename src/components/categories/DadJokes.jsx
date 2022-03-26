@@ -1,6 +1,6 @@
 import "../../stylesheets/css/DadJokes.css";
 import { useState } from "react";
-import { dadJokesData } from "../../Data/dadJokesData.js";
+import { dadJokesData } from "../../Data/dadJokesData";
 import ArrowBackIosSharpIcon from "@mui/icons-material/ArrowBackIosSharp";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 
