@@ -13,6 +13,7 @@ import Roast from "./components/categories/Roast";
 import Guess from "./components/categories/Guess";
 import Laugh from "./components/categories/Laugh";
 import Memes from "./components/categories/Memes";
+import Add from "./components/categories/Add";
 
 // import styling
 import "./stylesheets/css/App.css";
@@ -40,6 +41,7 @@ const App = () => {
           <Route path="/guess" element={<Guess />} />
           <Route path="/laugh" element={<Laugh />} />
           <Route path="/memes" element={<Memes />} />
+          <Route path="/add" element={<Add />} />
           <Route path="/*" element={<Home />} />
         </Routes>
         <form
@@ -56,10 +58,17 @@ const App = () => {
               name="timer"
               value={input}
               onChange={(event) => handleChange(event, setInput)}
-              onClick={() => setHide(true)}
+              placeholder="Enter Usage Time in Seconds"
+              // onClick={() => setHide(true)}
             />
           )}
-          <Timer timer={timer} show={show} setShow={setShow} />
+
+          <Timer
+            timer={timer}
+            show={show}
+            setShow={setShow}
+            setHide={setHide}
+          />
         </form>
         <Ad />
       </Router>
