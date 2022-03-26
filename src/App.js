@@ -3,6 +3,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import other Components
+import ModalComp from "./components/Modal";
 import Home from "./components/home/Home";
 import Timer from "./components/timer/Timer";
 import { handleChange, handleSubmit } from "./helper/eventHandler";
@@ -17,12 +18,19 @@ import "./stylesheets/css/App.css";
 
 const App = () => {
   const [input, setInput] = useState("");
-  const [timer, setTimer] = useState(0);
-  console.log(timer);
+  const [timer, setTimer] = useState(60);
+  const [show, setShow] = useState(false);
+  // console.log(timer);
 
   return (
     <div className="App">
       <Router>
+        <ModalComp
+          show={show}
+          setShow={setShow}
+          title={"Time's Up!"}
+          message={"Hope you had a laugh!"}
+        />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/dadjokes" element={<DadJokes />} />
@@ -42,7 +50,7 @@ const App = () => {
             onChange={(event) => handleChange(event, setInput)}
           />
         </form>
-        <Timer timer={timer} />
+        <Timer timer={timer} show={show} setShow={setShow} />
       </Router>
     </div>
   );

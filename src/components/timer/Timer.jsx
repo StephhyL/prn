@@ -1,17 +1,25 @@
 import React, { useEffect, useState } from "react";
-import { timeFormat } from "./helper/timeFormat";
+
+// import other libraries
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 import useSound from "use-sound";
+
+// import local files
+import { timeFormat } from "./helper/timeFormat";
+import timerSound from "./alarm.mp3";
 
 // import styling
 import "../../stylesheets/css/Timer.css";
-// import mp3 audio for timer
-import timerSound from "./alarm.mp3";
 
 const Timer = (props) => {
-  const { timer } = props;
+  const { timer, setShow } = props;
   const [counter, setCounter] = useState(timer);
   const [playSound, setPlaySound] = useState(false);
   const [play] = useSound(timerSound);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   console.log(counter);
 
@@ -22,7 +30,8 @@ const Timer = (props) => {
 
   useEffect(() => {
     if (counter === 0) {
-      setPlaySound(true);
+      setShow(true);
+      // setPlaySound(true);
     }
     const timer =
       counter > 0 &&
