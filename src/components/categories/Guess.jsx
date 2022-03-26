@@ -4,6 +4,7 @@ import { useState } from "react";
 import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
 import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
 import Button from "@mui/material/Button";
+import { blue } from "@mui/material/colors";
 
 // import other Components
 import Back from "./Back";
@@ -59,17 +60,21 @@ const Guess = () => {
       <div className="arrow-container">
         <div className="left-click">
           <Button
+            className="backNext"
             onClick={() => onLeftClick()}
-            // variant="contained"
-            size="large"
-            endIcon={<ArrowBackSharpIcon />}
-          ></Button>
+            color="primary"
+            // variant="variant"
+            sx={{ color: blue[500] }}
+            aria-label="add"
+          >
+            <ArrowBackSharpIcon classname="arrow-icon large" />
+          </Button>
         </div>
 
         <div className="right-click">
           <Button
             onClick={() => onRightClick()}
-            variant="contained"
+            // variant="contained"
             size="large"
             startIcon={<ArrowForwardSharpIcon />}
           />

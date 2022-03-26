@@ -1,4 +1,4 @@
-const roast = [
+const roastData = [
   {
       roasts: "Mirrors can't talk. Luckly for you, they can't laugh either.",
   },
@@ -36,3 +36,5 @@ const roast = [
       roasts: "Your face makes onions cry."
   }
 ];
+
+export {roastData}
