@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Guess = () => {
   return (
-    <div>Guess</div>
-  )
-}
+    <div>
+      <div className="back">
+        <Back />
+      </div>
+      Guess
+    </div>
+  );
+};
 
-export default Guess
+export default Guess;
