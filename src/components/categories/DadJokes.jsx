@@ -1,6 +1,6 @@
 import "../../stylesheets/css/DadJokes.css";
 import { useState } from "react";
-import { dadJokesData } from "../../Data/DadJokesData.js";
+import { dadJokesData } from "../../Data/dadJokesData.js";
 import ArrowBackIosSharpIcon from "@mui/icons-material/ArrowBackIosSharp";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp"
 
@@ -31,7 +31,7 @@ function DadJokes() {
       <ArrowBackIosSharpIcon style={{ fontSize: 30 }} />
       </div>
       <div className="dad-joke">
-        <h1 className="joke-text">{dadJokesData[currentJoke]}</h1>
+        <h1 className="joke-text">{dadJokesData[currentJoke].joke}</h1>
       </div>
       <div className="right-click" onClick={() => onRightClick()}>
       <ArrowForwardIosSharpIcon style={{ fontSize: 30 }} />
