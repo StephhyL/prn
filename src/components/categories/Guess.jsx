@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import { InputGroup, FormControl, Button} from 'react-bootstrap'
+import {Button} from 'react-bootstrap'
 // import other Components
 import Back from "./Back";
 
@@ -36,23 +36,38 @@ const Guess = () => {
 
   return (
     <>
-      <div className="back">
-        <Back />
+      <div className="backArrow">
+        <div className="back">
+          <Back />
+        </div>
       </div>
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front" onClick={onClick}>
+      <div className="flip-card">
+        <div className="flip-card-inner">
+          <div className="flip-card-front" onClick={onClick}>
        
             <p className="answer" >{question === true ? guess[currentJoke].question :guess[currentJoke].answer}</p> 
             </div>
           
           </div>
         </div>
-   
-      
+      <div className="allArrows">
+        <div className="left-click" onClick={() => onLeftClick()}>
+      <Button variant="primary" size="lg">
+          Previous
+       </Button>
+      </div>
+      <div className="right-click" onClick={() => onRightClick()}>
+        <Button variant="secondary" size="lg">
+         Next
+       </Button>
+      </div>
+      </div>
     </>
   );
 };
 
 export default Guess;
 
+
+  //       <div className="mb-2">
+  // </div>

@@ -40,8 +40,8 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #F9C0C0;
-  color: #64748B;
+  background-color: #64748B;
+  color: #F9C0C0;
   // margin-top: 200px;
   // margin-bottom: 1rem;
   font-size: xxx-large;
@@ -49,11 +49,19 @@
 }
 
 .answer {
-  margin-top: 200px;
+  margin-top: 30%;
   margin-bottom: 1rem;
   font-size: xxx-large;
 }
 
+
+.backArrow .back {
+  display: flex;
+}
+.allArrows {
+  display: flex;
+
+}
 // label {
 //   display: block;
 //   background: lightgrey;
