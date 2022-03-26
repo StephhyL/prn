@@ -27,7 +27,7 @@ const Guess = () => {
     } else if (currentJoke === 0) {
       setCurrentJoke(guess.length - 1);
     }
-    setQuestion(true)
+    setQuestion(true);
   };
 
   const onRightClick = () => {
@@ -47,23 +47,20 @@ const Guess = () => {
         </div>
       </div>
       <Card>
-      
-          <div className="flip-card-front" onClick={onClick}>
-            <p className="answer">
-              {question === true
-                ? guess[currentJoke].question
-                : guess[currentJoke].answer}
-            </p>
-            
-          </div>
-     
-        </Card>
-        
-        <div className="arrow-container">
+        <div className="flip-card-front" onClick={onClick}>
+          <p className="answer">
+            {question === true
+              ? guess[currentJoke].question
+              : guess[currentJoke].answer}
+          </p>
+        </div>
+      </Card>
+
+      <div className="arrow-container">
         <div className="left-click">
           <Button
             onClick={() => onLeftClick()}
-            variant="contained"
+            // variant="contained"
             size="large"
             endIcon={<ArrowBackSharpIcon />}
           ></Button>
@@ -79,7 +76,6 @@ const Guess = () => {
         </div>
       </div>
     </div>
-  
   );
 };
 
