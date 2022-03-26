@@ -1,9 +1,11 @@
 import "../../stylesheets/css/DadJokes.css";
 import { useState } from "react";
 import { dadJokesData } from "../../Data/dadJokesData";
-import ArrowBackIosSharpIcon from "@mui/icons-material/ArrowBackIosSharp";
-import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
-import Button from '@mui/material/Button';
+import { shadows } from '@mui/system';
+import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
+import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
+
+import Button from "@mui/material/Button";
 import Card from "../../UI/Card";
 // import Button from ""
 function DadJokes() {
@@ -29,26 +31,29 @@ function DadJokes() {
   return (
     <div className="dad">
       <Card className="dad-joke">
-          <h1 className="joke-text">{dadJokesData[currentJoke].joke}</h1>
-        
+        <h1 className="joke-text">{dadJokesData[currentJoke].joke}</h1>
       </Card>
       <div className="arrow-container">
-          <div className="left-click" onClick={() => onLeftClick()}>
-        <Button variant="contained" size="large" endIcon={<ArrowBackIosSharpIcon/>}>
-            {/* <ArrowBackIosSharpIcon style={{ fontSize: 30 }} /> */}
-            </Button>
-          </div>
+        <div className="left-click">
+          <Button
+            onClick={() => onLeftClick()}
+            variant="contained"
+            size="large"
+            endIcon={<ArrowBackSharpIcon />}
+          ></Button>
+        </div>
 
-          <div className="right-click" onClick={() => onRightClick()}>
-        <Button variant="contained" endIcon={<ArrowForwardIosSharpIcon />}/>
-    
-        
-          </div>
-        
+        <div className="right-click">
+          <Button
+            onClick={() => onRightClick()}
+            variant="contained"
+            size="large"
+            startIcon={<ArrowForwardSharpIcon />}
+          />
+        </div>
       </div>
     </div>
   );
 }
 
 export default DadJokes;
-
