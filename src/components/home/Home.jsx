@@ -15,7 +15,7 @@ const Home = () => {
   const [catList, setCatList] = useState(images);
 
   const parseList = catList.map((cat) => (
-    <Category key={uuidv4()} catImg={cat.img} />
+    <Category key={uuidv4()} catImg={cat.img} name={cat.name} />
   ));
 
   return (
