@@ -5,19 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import other Components
 import Home from "./components/home/Home";
 import Timer from "./components/timer/Timer";
+import { handleChange, handleSubmit } from "./helper/eventHandler";
 
 // import styling
 import "./stylesheets/css/App.css";
-
-const handleSubmit = function (event, input, setTimer) {
-  // disable default auto refresh upon submit
-  event.preventDefault();
-  setTimer(input);
-};
-
-const handleChange = function (event, setInput) {
-  setInput(event.target.value);
-};
 
 const App = () => {
   const [input, setInput] = useState("");
