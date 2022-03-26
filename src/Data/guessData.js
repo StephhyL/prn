@@ -8,7 +8,7 @@ const guess = [
   {"question":"What did one cell say to his sister cell that stepped on his toe?",
   "answer":"Mitosis!" 
   },
-  {"question":"What ado you call a snobbish criminal going down the stairs?",
+  {"question":"What do you call a snobbish criminal going down the stairs?",
   "answer":"A condescending con descending" 
   },
   {"question":"What do you call a bunch of chess players bragging about their games in a hotel lobby?",

@@ -13,14 +13,13 @@ import timerSound from "./alarm.mp3";
 import "../../stylesheets/css/Timer.css";
 
 const Timer = (props) => {
-  const { timer, setShow } = props;
+  const { timer, setShow, setHide } = props;
   const [counter, setCounter] = useState(timer);
   const [playSound, setPlaySound] = useState(false);
   const [play] = useSound(timerSound);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
 
   useEffect(() => {
     // reset counter - restart timer
@@ -49,7 +48,14 @@ const Timer = (props) => {
 
   return (
     <div className="timer">
-      <div className="time">{timeFormat(counter)}</div>
+      <div
+        className="time"
+        onClick={() => {
+          setHide(true);
+        }}
+      >
+        {timeFormat(counter)}
+      </div>
     </div>
   );
 };

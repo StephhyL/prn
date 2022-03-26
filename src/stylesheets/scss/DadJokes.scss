@@ -1,14 +1,47 @@
 .dad {
-  border: 3px pink solid;
   display: flex;
-  margin: 50%;
-  padding: 50%;
+  flex-direction: column;
 }
 
-.left-click{
-  z-index: 100;
+.backNext {
+  // background-color: aqua;
+  background-color: #64748b;
+  width: 50%;
+  // font-size: 5em;
 }
 
-.right-click{
+.large {
+  font-size: 3em;
+}
+
+.left-click {
   z-index: 100;
+  // width: 50%;
+  background-color: #f9c0c0;
+  min-width: 100px;
+  padding: 20px 22px;
+  border-radius: 10px;
+}
+
+.right-click {
+  z-index: 100;
+  min-width: 100px;
+  padding: 20px 22px;
+  border-radius: 10px;
+  background-color: #f9c0c0;
+}
+
+.dad-joke .joke-text {
+  color: #64748b;
+}
+
+.arrow-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+}
+
+#arrow-icon {
+  color: #64748b !important;
 }

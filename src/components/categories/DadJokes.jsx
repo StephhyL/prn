@@ -1,8 +1,12 @@
 import "../../stylesheets/css/DadJokes.css";
 import { useState } from "react";
 import { dadJokesData } from "../../Data/dadJokesData";
-import ArrowBackIosSharpIcon from "@mui/icons-material/ArrowBackIosSharp";
-import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
+import Button from "@mui/material/Button";
+import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
+import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
+import Card from "../../UI/Card";
+import Back from "./Back";
+import { blue } from "@mui/material/colors";
 
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
@@ -26,14 +30,41 @@ function DadJokes() {
 
   return (
     <div className="dad">
-      <div className="left-click" onClick={() => onLeftClick()}>
-        <ArrowBackIosSharpIcon style={{ fontSize: 30 }} />
+      <div className="backArrow">
+        <div className="back">
+          <Back />
+        </div>
       </div>
-      <div className="dad-joke">
+      <Card className="dad-joke">
         <h1 className="joke-text">{dadJokesData[currentJoke].joke}</h1>
-      </div>
-      <div className="right-click" onClick={() => onRightClick()}>
-        <ArrowForwardIosSharpIcon style={{ fontSize: 30 }} />
+      </Card>
+      <div className="arrow-container">
+        <div className="left-click">
+          <Button
+            className="backNext"
+            onClick={() => onLeftClick()}
+            color="primary"
+            // variant="variant"
+            sx={{ color: blue[500] }}
+            aria-label="add"
+          >
+            <ArrowBackSharpIcon classname="arrow-icon large" />
+          </Button>
+        </div>
+
+        <div className="right-click">
+          <Button
+            className="backNext"
+            onClick={() => onRightClick()}
+            // variant="variant"
+            size="large"
+            // sx={{ boxShadow: 3 }}
+            color="primary"
+            aria-label="add"
+          >
+            <ArrowForwardSharpIcon classname="arrow-icon" />
+          </Button>
+        </div>
       </div>
     </div>
   );
