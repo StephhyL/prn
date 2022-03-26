@@ -1,9 +1,15 @@
-import React from 'react'
+// import other Components
+import Back from "./Back";
 
 const DarkJokes = () => {
   return (
-    <div>DarkJokes</div>
-  )
-}
+    <div>
+      <div className="back">
+        <Back />
+      </div>
+      DarkJokes
+    </div>
+  );
+};
 
-export default DarkJokes
+export default DarkJokes;

@@ -1,4 +1,5 @@
-import React from "react";
+// import other Components
+import Back from "./Back";
 
 const Guess = () => {
   return (

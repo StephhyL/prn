@@ -7,7 +7,7 @@ import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
 
-  console.log("dadJokesData--->", dadJokesData[currentJoke].joke);
+  // console.log('dadJokesData--->', dadJokesData)
 
   const onLeftClick = () => {
     if (currentJoke > 0 && setCurrentJoke(currentJoke - 1)) {
@@ -26,16 +26,15 @@ function DadJokes() {
 
   return (
     <div className="dad">
-      {dadJokesData[currentJoke].joke}
-      {/* <div className="left-click" onClick={() => onLeftClick()}>
-      <ArrowBackIosSharpIcon style={{ fontSize: 30 }} />
-      </div> */}
-      {/* <div className="dad-joke">
+      <div className="left-click" onClick={() => onLeftClick()}>
+        <ArrowBackIosSharpIcon style={{ fontSize: 30 }} />
+      </div>
+      <div className="dad-joke">
         <h1 className="joke-text">{dadJokesData[currentJoke]}</h1>
-      </div> */}
-      {/* <div className="right-click" onClick={() => onRightClick()}>
-      <ArrowForwardIosSharpIcon style={{ fontSize: 30 }} />
-      </div> */}
+      </div>
+      <div className="right-click" onClick={() => onRightClick()}>
+        <ArrowForwardIosSharpIcon style={{ fontSize: 30 }} />
+      </div>
     </div>
   );
 }

@@ -2,7 +2,14 @@
 import Back from "./Back";
 
 const Memes = () => {
-  return <div>Memes</div>;
+  return (
+    <div>
+      <div className="back">
+        <Back />
+      </div>
+      Memes
+    </div>
+  );
 };
 
 export default Memes;
