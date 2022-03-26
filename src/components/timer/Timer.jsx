@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { timeFormat } from "./helper/timeFormat";
 
 // import styling
 import "../../stylesheets/css/Timer.css";
@@ -17,7 +18,7 @@ const Timer = () => {
 
   return (
     <div className="timer">
-      <div className="time">{counter}</div>
+      <div className="time">{timeFormat(counter)}</div>
     </div>
   );
 };

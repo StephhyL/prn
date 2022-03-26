@@ -7,18 +7,18 @@ describe("format time", () => {
   test("format seconds", () => {
     const input = 45;
     const output = timeFormat(input);
-    expect(output).toEqual("45 seconds");
+    expect(output).toEqual("45 seconds left");
   });
 
   test("format minutes", () => {
     const input = 90;
     const output = timeFormat(input);
-    expect(output).toEqual("1 minutes");
+    expect(output).toEqual("1 minutes left");
   });
 
   test("format hours", () => {
     const input = 4800;
     const output = timeFormat(input);
-    expect(output).toEqual("1 hour");
+    expect(output).toEqual("1 hour left");
   });
 });
