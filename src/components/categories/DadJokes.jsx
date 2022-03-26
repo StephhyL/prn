@@ -34,9 +34,10 @@ function DadJokes() {
       <div className="arrow-container">
         <div className="left-click">
           <Button
+            className="backNext"
             onClick={() => onLeftClick()}
             color="primary"
-            variant="variant"
+            // variant="variant"
             size="large"
             sx={{ boxShadow: 3 }}
             aria-label="add"
@@ -47,8 +48,9 @@ function DadJokes() {
 
         <div className="right-click">
           <Button
+            className="backNext"
             onClick={() => onRightClick()}
-            variant="variant"
+            // variant="variant"
             size="large"
             sx={{ boxShadow: 3 }}
             color="primary"

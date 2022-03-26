@@ -47,8 +47,7 @@ const Guess = () => {
         </div>
       </div>
       <Card>
-      <div className="flip-card">
-        <div className="flip-card-inner">
+      
           <div className="flip-card-front" onClick={onClick}>
             <p className="answer">
               {question === true
@@ -57,8 +56,7 @@ const Guess = () => {
             </p>
             
           </div>
-        </div>
-        </div>
+     
         </Card>
         
         <div className="arrow-container">

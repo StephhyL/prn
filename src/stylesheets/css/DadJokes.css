@@ -2,11 +2,21 @@
   display: flex;
   flex-direction: column; }
 
+.backNext {
+  background-color: #64748b;
+  width: 50%; }
+
 .left-click {
-  z-index: 100; }
+  z-index: 100;
+  min-width: 100px;
+  padding: 20px 22px;
+  border-radius: 10px; }
 
 .right-click {
-  z-index: 100; }
+  z-index: 100;
+  min-width: 100px;
+  padding: 20px 22px;
+  border-radius: 10px; }
 
 .dad-joke .joke-text {
   color: #64748B; }
