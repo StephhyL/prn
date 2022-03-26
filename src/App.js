@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import other Components
 import Home from "./components/home/Home";
+import DadJokes from "./components/categories/DadJokes";
 import Timer from "./components/timer/Timer";
 
 // import styling
@@ -14,6 +15,7 @@ const App = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/DadJokes" element={<DadJokes />} />
         </Routes>
         <Timer />
       </Router>

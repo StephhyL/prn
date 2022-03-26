@@ -6,11 +6,11 @@ import guess from "./images/guess.png";
 import laugh from "./images/laugh.png";
 
 const images = [
-  { img: dad },
-  { img: dark },
-  { img: memes },
-  { img: guess },
-  { img: laugh },
+  { name: "DadJokes", img: dad },
+  { name: "DarkJokes", img: dark },
+  { name: "Memes", img: memes },
+  { name: "Guess", img: guess },
+  { name: "Laugh", img: laugh },
 ];
 
 export { images };
