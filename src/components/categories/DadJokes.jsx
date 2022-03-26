@@ -3,7 +3,7 @@ import { useState } from "react";
 import { dadJokesData } from "../../Data/dadJokesData";
 import ArrowBackIosSharpIcon from "@mui/icons-material/ArrowBackIosSharp";
 import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
-
+import Card from "../../UI/Card";
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
 
@@ -26,6 +26,7 @@ function DadJokes() {
 
   return (
     <div className="dad">
+      <Card>
       <div className="left-click" onClick={() => onLeftClick()}>
         <ArrowBackIosSharpIcon style={{ fontSize: 30 }} />
       </div>
@@ -35,6 +36,7 @@ function DadJokes() {
       <div className="right-click" onClick={() => onRightClick()}>
         <ArrowForwardIosSharpIcon style={{ fontSize: 30 }} />
       </div>
+      </Card>
     </div>
   );
 }
