@@ -14,14 +14,16 @@
   background-color: #f9c0c0;
   min-width: 100px;
   padding: 20px 22px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 5px 5px #b3e0af; }
 
 .right-click {
   z-index: 100;
   min-width: 100px;
   padding: 20px 22px;
   border-radius: 10px;
-  background-color: #f9c0c0; }
+  background-color: #f9c0c0;
+  box-shadow: 5px 5px #b3e0af; }
 
 .dad-joke .joke-text {
   color: #64748b; }
