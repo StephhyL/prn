@@ -1,0 +1,20 @@
+.laugh {
+  display: flex;
+  flex-direction: column;
+
+  .back {
+    margin-top: 5%;
+    display: flex;
+    border: 3px blue solid;
+  }
+
+  .hahaImgBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 80vh;
+    border: 3px red solid;
+  }
+}
