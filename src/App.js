@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import DadJokes from "./components/categories/DadJokes";
 import Timer from "./components/timer/Timer";
-import DadJokes from "./components/categories/DadJokes";
 import DarkJokes from "./components/categories/DarkJokes";
 import Guess from "./components/categories/Guess";
 import Laugh from "./components/categories/Laugh";

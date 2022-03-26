@@ -1,4 +1,4 @@
-import "../../stylesheets/scss/DadJokes.scss"
+import "../../stylesheets/css/DadJokes.css";
 
 const DadJokes = () => {
   return <div className="dad">Hello from DAD JOKES</div>;
