@@ -2,9 +2,11 @@ import "../../src/stylesheets/css/Card.css";
 
 import React from 'react'
 
-function Card() {
+function Card(props) {
+  const {className} = props;
+  const classes = "card-holder " + (className ? className : "")
   return (
-    <div className="card-holder">Card</div>
+    <div className={classes}>{props.children}</div>
   )
 }
 
