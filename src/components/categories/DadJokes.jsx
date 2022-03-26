@@ -7,7 +7,7 @@ import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp"
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
 
-  console.log('dadJokesData--->', dadJokesData)
+  // console.log('dadJokesData--->', dadJokesData)
 
   const onLeftClick = () => {
     if (currentJoke > 0 && setCurrentJoke(currentJoke - 1)) {
@@ -25,7 +25,7 @@ function DadJokes() {
   };
 
   return (
-    <div>
+    <div className="dad">
       
       <div className="left-click" onClick={() => onLeftClick()}>
       <ArrowBackIosSharpIcon style={{ fontSize: 30 }} />
