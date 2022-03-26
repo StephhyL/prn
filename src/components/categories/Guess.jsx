@@ -12,8 +12,13 @@ import "../../stylesheets/scss/Guess.scss";
 const Guess = () => {
   
   const [currentJoke, setCurrentJoke] = useState(0);
+  const [question, setQuestion] = useState(true);
+
 
   console.log("guessData-->", guess);
+  const onClick = () => {
+    setQuestion(!question)
+  }
   const onLeftClick = () => {
     if (currentJoke > 0 && setCurrentJoke(currentJoke - 1)) {
     } else if (currentJoke === 0) {
@@ -36,14 +41,18 @@ const Guess = () => {
       </div>
       <div class="flip-card">
         <div class="flip-card-inner">
-          <div class="flip-card-front">{guess[currentJoke].question}</div>
-          <div class="flip-card-back">
+          <div class="flip-card-front" onClick={onClick}>
+        {/* <input type="checkbox" id="demo"/>
+        <label for="demo">{guess[currentJoke].question}
+            </label> */}
+            <p className="answer" >{question === true ? guess[currentJoke].question :guess[currentJoke].answer}</p> 
+            </div>
+          {/* <div class="flip-card-back"> */}
             
-            <p>{guess[currentJoke].answer}</p>
-            
+            {/* {!question && <p className="answer">{guess[currentJoke].answer}</p>} */}
           </div>
         </div>
-      </div>
+      {/* </div> */}
       
     </>
   );

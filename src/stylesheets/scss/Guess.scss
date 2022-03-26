@@ -19,7 +19,7 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:checked .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -34,17 +34,37 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: #F9C0C0;
+  color: #64748B
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #F9C0C0;
+  color: #64748B;
+  // margin-top: 200px;
+  // margin-bottom: 1rem;
+  font-size: xxx-large;
   transform: rotateY(180deg);
 }
 
+.answer {
+  margin-top: 200px;
+  margin-bottom: 1rem;
+  font-size: xxx-large;
+}
+
+label {
+  display: block;
+  background: lightgrey;
+  width: 100px;
+  height: 100px;
+}
+
+#demo:checked + label {
+  background: #F9C0C0;
+  color: white;
+}
 
 // .guess{
 //   // width: 100vw;
