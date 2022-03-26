@@ -1,13 +1,11 @@
 import "../../stylesheets/css/DadJokes.css";
 import { useState } from "react";
 import { dadJokesData } from "../../Data/dadJokesData";
-import { shadows } from '@mui/system';
+import Button from "@mui/material/Button";
 import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
 import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
-
-import Button from "@mui/material/Button";
 import Card from "../../UI/Card";
-// import Button from ""
+
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
 
@@ -27,7 +25,7 @@ function DadJokes() {
       setCurrentJoke(currentJoke + 1);
     }
   };
-
+ 
   return (
     <div className="dad">
       <Card className="dad-joke">
@@ -36,20 +34,30 @@ function DadJokes() {
       <div className="arrow-container">
         <div className="left-click">
           <Button
+            className="backNext"
             onClick={() => onLeftClick()}
-            variant="contained"
+            color="primary"
+            // variant="variant"
             size="large"
-            endIcon={<ArrowBackSharpIcon />}
-          ></Button>
+            sx={{ boxShadow: 3 }}
+            aria-label="add"
+          >
+            <ArrowBackSharpIcon classname="arrow-icon" />
+          </Button>
         </div>
 
         <div className="right-click">
           <Button
+            className="backNext"
             onClick={() => onRightClick()}
-            variant="contained"
+            // variant="variant"
             size="large"
-            startIcon={<ArrowForwardSharpIcon />}
-          />
+            sx={{ boxShadow: 3 }}
+            color="primary"
+            aria-label="add"
+          >
+            <ArrowForwardSharpIcon classname="arrow-icon" />
+          </Button>
         </div>
       </div>
     </div>

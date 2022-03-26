@@ -1,8 +1,13 @@
 import React from "react";
 import { useState } from "react";
-// import { InputGroup, FormControl, Button} from 'react-bootstrap'
+// import {Button} from 'react-bootstrap'
+import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
+import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
+import Button from "@mui/material/Button";
+
 // import other Components
 import Back from "./Back";
+import Card from "../../UI/Card";
 
 // import data
 import { guess } from "../../Data/guessData.js";
@@ -22,6 +27,7 @@ const Guess = () => {
     } else if (currentJoke === 0) {
       setCurrentJoke(guess.length - 1);
     }
+    setQuestion(true)
   };
 
   const onRightClick = () => {
@@ -30,26 +36,50 @@ const Guess = () => {
     } else {
       setCurrentJoke(currentJoke + 1);
     }
+    setQuestion(true);
   };
 
   return (
-    <>
-      <div className="back">
-        <Back />
+    <div className="guess">
+      <div className="backArrow">
+        <div className="back">
+          <Back />
+        </div>
       </div>
-      <div className="flip-card">
-        <div className="flip-card-inner">
+      <Card>
+      
           <div className="flip-card-front" onClick={onClick}>
             <p className="answer">
               {question === true
                 ? guess[currentJoke].question
                 : guess[currentJoke].answer}
             </p>
+            
           </div>
-          {/* <div class="flip-card-back"> */}
+     
+        </Card>
+        
+        <div className="arrow-container">
+        <div className="left-click">
+          <Button
+            onClick={() => onLeftClick()}
+            variant="contained"
+            size="large"
+            endIcon={<ArrowBackSharpIcon />}
+          ></Button>
+        </div>
+
+        <div className="right-click">
+          <Button
+            onClick={() => onRightClick()}
+            variant="contained"
+            size="large"
+            startIcon={<ArrowForwardSharpIcon />}
+          />
         </div>
       </div>
-    </>
+    </div>
+  
   );
 };
 
