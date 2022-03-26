@@ -1,16 +1,1 @@
-.dad {
-  display: flex;
-  flex-direction: column; }
-
-.left-click {
-  z-index: 100; }
-
-.right-click {
-  z-index: 100; }
-
-.dad-joke .joke-text {
-  color: #64748B; }
-
-.arrow-container {
-  display: flex;
-  flex-direction: row; }
+.dad{display:flex;flex-direction:column}.left-click{z-index:100}.right-click{z-index:100}.dad-joke .joke-text{color:#64748b}.arrow-container{display:flex;flex-direction:row}
