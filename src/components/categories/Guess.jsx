@@ -42,17 +42,15 @@ const Guess = () => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front" onClick={onClick}>
-        {/* <input type="checkbox" id="demo"/>
-        <label for="demo">{guess[currentJoke].question}
-            </label> */}
+       
             <p className="answer" >{question === true ? guess[currentJoke].question :guess[currentJoke].answer}</p> 
             </div>
           {/* <div class="flip-card-back"> */}
-            
-            {/* {!question && <p className="answer">{guess[currentJoke].answer}</p>} */}
+        
+           
           </div>
         </div>
-      {/* </div> */}
+  
       
     </>
   );
