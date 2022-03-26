@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // import other Components
 import ModalComp from "./components/Modal";
+import Ad from "./components/Ad";
 import Home from "./components/home/Home";
 import Timer from "./components/timer/Timer";
 import { handleChange, handleSubmit } from "./helper/eventHandler";
@@ -51,6 +52,7 @@ const App = () => {
           />
         </form>
         <Timer timer={timer} show={show} setShow={setShow} />
+        <Ad />
       </Router>
     </div>
   );
