@@ -1,6 +1,8 @@
 import { useState } from "react";
 import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
 import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
+import { blue } from "@mui/material/colors";
+
 // import other Components
 import Back from "./Back";
 import Card from "../../UI/Card";
@@ -45,23 +47,32 @@ const Roast = () => {
      
         
         
-        <div className="arrow-container">
+      <div className="arrow-container">
         <div className="left-click">
           <Button
+            className="backNext"
             onClick={() => onLeftClick()}
-            variant="contained"
-            size="large"
-            endIcon={<ArrowBackSharpIcon />}
-          ></Button>
+            color="primary"
+            // variant="variant"
+            sx={{ color: blue[500] }}
+            aria-label="add"
+          >
+            <ArrowBackSharpIcon classname="arrow-icon large" />
+          </Button>
         </div>
 
         <div className="right-click">
           <Button
+            className="backNext"
             onClick={() => onRightClick()}
-            variant="contained"
+            // variant="variant"
             size="large"
-            startIcon={<ArrowForwardSharpIcon />}
-          />
+            // sx={{ boxShadow: 3 }}
+            color="primary"
+            aria-label="add"
+          >
+            <ArrowForwardSharpIcon classname="arrow-icon" />
+          </Button>
         </div>
       </div>
     </div>
