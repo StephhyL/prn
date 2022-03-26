@@ -1,9 +1,15 @@
-import React from 'react'
+// import other Components
+import Back from "./Back";
 
 const Guess = () => {
   return (
-    <div>Guess</div>
-  )
-}
+    <div>
+      <div className="back">
+        <Back />
+      </div>
+      Guess
+    </div>
+  );
+};
 
-export default Guess
+export default Guess;

@@ -1,9 +1,15 @@
-import React from 'react'
+// import other Components
+import Back from "./Back";
 
 const Memes = () => {
   return (
-    <div>Memes</div>
-  )
-}
+    <div>
+      <div className="back">
+        <Back />
+      </div>
+      Memes
+    </div>
+  );
+};
 
-export default Memes
+export default Memes;
