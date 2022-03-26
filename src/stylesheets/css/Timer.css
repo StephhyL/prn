@@ -16,3 +16,17 @@
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.timer-input {
+  position: absolute;
+  top: 71%;
+  left: 30%;
+  font-size: 3em;
+  width: 17em;
+  background-color: #64748b;
+  color: #f4b43e; }
+
+::placeholder {
+  color: #f4b43e;
+  opacity: 1;
+  /* Firefox */ }
