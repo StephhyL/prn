@@ -45,12 +45,10 @@ const Guess = () => {
        
             <p className="answer" >{question === true ? guess[currentJoke].question :guess[currentJoke].answer}</p> 
             </div>
-          {/* <div class="flip-card-back"> */}
-        
-           
+          
           </div>
         </div>
-  
+   
       
     </>
   );
