@@ -3,11 +3,10 @@ import { useNavigate } from "react-router-dom";
 import "../../stylesheets/css/Category.css";
 
 const Category = (props) => {
-  const { catImg, name} = props;
+  const { catImg, name } = props;
   const navigate = useNavigate();
 
   // console.log("catImg --> ", catImg);
-
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -20,10 +19,9 @@ const Category = (props) => {
         src={catImg}
         className="logo"
         alt="prn-logo"
-        width="125"
+        width={name === "roast" ? 220 : 125}
         // height="200"
       />
-      
     </div>
   );
 };

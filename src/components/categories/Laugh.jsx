@@ -42,10 +42,10 @@ const Laugh = () => {
       <div className="hahaImgBtn">
         {/* <span>Hello From Laugh</span> */}
         <div onClick={handleClick}>
-          {isHaha && (
+          {!isHaha && (
             <img src={haha} className="haha" width="800" height="800" />
           )}
-          {!isHaha && (
+          {isHaha && (
             <img src={haha2} className="haha" width="240" height="240" />
           )}
         </div>
