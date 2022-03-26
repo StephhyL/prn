@@ -5,5 +5,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4em;
   margin-top: 1em; }
+
+.fontTitleJoke {
+  font-size: 4em;
+  margin-bottom: 1em; }
+
+.fontJoke {
+  font-size: xxx-large; }
