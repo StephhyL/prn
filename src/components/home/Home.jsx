@@ -1,5 +1,4 @@
 import React from "react";
-
 // import from other components
 import Header from "./Header";
 import Category from "./Category";
