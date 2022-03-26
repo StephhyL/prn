@@ -4,8 +4,15 @@ import { timeFormat } from "./helper/timeFormat";
 // import styling
 import "../../stylesheets/css/Timer.css";
 
-const Timer = () => {
-  const [counter, setCounter] = useState(60);
+const Timer = (props) => {
+  const { timer } = props;
+  const [counter, setCounter] = useState(timer);
+  console.log(counter);
+
+  useEffect(() => {
+    // reset counter - restart timer
+    setCounter(timer);
+  }, [timer]);
 
   useEffect(() => {
     const timer =
