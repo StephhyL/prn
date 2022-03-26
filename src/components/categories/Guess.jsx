@@ -1,10 +1,19 @@
 import React from 'react'
 import { InputGroup, FormControl, Button} from 'react-bootstrap'
+// import other Components
+import Back from "./Back";
+
+// import data
+import { guessData } from "../../Data/guessData";
 
 import "../../stylesheets/scss/Guess.scss"
 const Guess = () => {
+  console.log("guessData-->", guessData);
   return (
     <div className='guess'>
+      <div className="back">
+        <Back />
+      </div>
     <div className='question'></div>
     <InputGroup className="mb-3">
     <FormControl
@@ -19,4 +28,5 @@ const Guess = () => {
   )
 }
 
-export default Guess
+
+export default Guess;
