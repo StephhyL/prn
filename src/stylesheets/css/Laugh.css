@@ -1,1 +1,13 @@
-.laugh{display:flex;flex-direction:column}.laugh .back{margin-top:5%;display:flex}.laugh .hahaImgBtn{display:flex;flex-direction:column;justify-content:center;align-items:center;width:70vw;height:70vh}
+.laugh {
+  display: flex;
+  flex-direction: column; }
+  .laugh .back {
+    margin-top: 5%;
+    display: flex; }
+  .laugh .hahaImgBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 70vh; }
