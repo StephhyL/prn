@@ -10,8 +10,8 @@ const Back = () => {
       <img
         src={BackImg}
         className="haha"
-        width="100"
-        height="100"
+        width="30"
+        height="30"
         onClick={() => navigate("/")}
       />
     </div>
