@@ -6,8 +6,12 @@
   background-color: #64748b;
   width: 50%; }
 
+.large {
+  font-size: 3em; }
+
 .left-click {
   z-index: 100;
+  background-color: #f9c0c0;
   min-width: 100px;
   padding: 20px 22px;
   border-radius: 10px; }
@@ -16,10 +20,11 @@
   z-index: 100;
   min-width: 100px;
   padding: 20px 22px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  background-color: #f9c0c0; }
 
 .dad-joke .joke-text {
-  color: #64748B; }
+  color: #64748b; }
 
 .arrow-container {
   display: flex;
@@ -28,4 +33,4 @@
   padding-top: 2rem; }
 
 #arrow-icon {
-  color: #64748B !important; }
+  color: #64748b !important; }

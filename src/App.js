@@ -70,7 +70,7 @@ const App = () => {
             setHide={setHide}
           />
         </form>
-        <Ad />
+        {/* <Ad /> */}
       </Router>
     </div>
   );

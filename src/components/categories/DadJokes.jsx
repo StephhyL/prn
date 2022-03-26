@@ -5,6 +5,8 @@ import Button from "@mui/material/Button";
 import ArrowBackSharpIcon from "@mui/icons-material/ArrowBackSharp";
 import ArrowForwardSharpIcon from "@mui/icons-material/ArrowForwardSharp";
 import Card from "../../UI/Card";
+import Back from "./Back";
+import { blue } from "@mui/material/colors";
 
 function DadJokes() {
   const [currentJoke, setCurrentJoke] = useState(0);
@@ -25,9 +27,14 @@ function DadJokes() {
       setCurrentJoke(currentJoke + 1);
     }
   };
- 
+
   return (
     <div className="dad">
+      <div className="backArrow">
+        <div className="back">
+          <Back />
+        </div>
+      </div>
       <Card className="dad-joke">
         <h1 className="joke-text">{dadJokesData[currentJoke].joke}</h1>
       </Card>
@@ -38,11 +45,10 @@ function DadJokes() {
             onClick={() => onLeftClick()}
             color="primary"
             // variant="variant"
-            size="large"
-            sx={{ boxShadow: 3 }}
+            sx={{ color: blue[500] }}
             aria-label="add"
           >
-            <ArrowBackSharpIcon classname="arrow-icon" />
+            <ArrowBackSharpIcon classname="arrow-icon large" />
           </Button>
         </div>
 
@@ -52,7 +58,7 @@ function DadJokes() {
             onClick={() => onRightClick()}
             // variant="variant"
             size="large"
-            sx={{ boxShadow: 3 }}
+            // sx={{ boxShadow: 3 }}
             color="primary"
             aria-label="add"
           >

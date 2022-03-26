@@ -4,7 +4,7 @@ import roast from "./images/roast.png";
 import memes from "./images/memes.png";
 import guess from "./images/guess.png";
 import laugh from "./images/laugh.png";
-import add from "./images/laugh.png";
+import add from "./images/addJoke.png";
 
 const images = [
   { name: "dadjokes", img: dad },

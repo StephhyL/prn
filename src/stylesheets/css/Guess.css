@@ -1,13 +1,1 @@
-.answer {
-  margin-bottom: 1rem;
-  font-size: xxx-large; }
-
-.backArrow .back {
-  display: flex; }
-
-.allArrows {
-  display: flex; }
-
-.arrow-container {
-  display: flex;
-  flex-direction: row; }
+.answer{margin-bottom:1rem;font-size:xxx-large}.backArrow .back{display:flex}.allArrows{display:flex}.arrow-container{display:flex;flex-direction:row}
