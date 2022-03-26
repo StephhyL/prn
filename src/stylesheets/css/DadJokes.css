@@ -13,4 +13,9 @@
 
 .arrow-container {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem; }
+
+#arrow-icon {
+  color: #64748B !important; }
