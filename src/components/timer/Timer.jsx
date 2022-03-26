@@ -21,7 +21,6 @@ const Timer = (props) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  console.log(counter);
 
   useEffect(() => {
     // reset counter - restart timer
