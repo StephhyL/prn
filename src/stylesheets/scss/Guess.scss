@@ -11,7 +11,7 @@
 /* This container is needed to position the front and back side */
 .flip-card-inner {
   position: relative;
-  width: 100%;
+  width: 100%; 
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
@@ -58,10 +58,18 @@
 .backArrow .back {
   display: flex;
 }
+
 .allArrows {
   display: flex;
 
 }
+
+.arrow-container{
+  display: flex;
+  flex-direction: row;
+  
+}
+
 // label {
 //   display: block;
 //   background: lightgrey;

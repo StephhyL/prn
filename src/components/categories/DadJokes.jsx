@@ -27,7 +27,7 @@ function DadJokes() {
       setCurrentJoke(currentJoke + 1);
     }
   };
-
+ 
   return (
     <div className="dad">
       <Card className="dad-joke">
