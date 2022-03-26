@@ -26,6 +26,9 @@ const dadJokesData = [
   {
     joke: "Police arrested a bottle of water because it was wanted in three different states: solid, liquid, and gas.",
   },
+  {
+    joke: "Air used to be free at the gas station, now it costs 2.50. You want to know why? Inflation."
+  }
 ];
 
 export { dadJokesData };
